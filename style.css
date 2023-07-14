@@ -7,93 +7,49 @@ body{
     left: 124px;
 }
 .settime{
-    background-color:#FFFFFF;
-    display: inline-block;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
     border-radius: 10px;
-    width: 566px;
-    height: 363px;
+    width: 38%;
+    height: 50%;
     position: absolute;
     top: 149px;
     left: 124px;
+}
+.fistdropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.secondropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.thirddropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fourthdropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .settimelogo{
     width: 34px;
     height: 34px;
     
 }
-#settimelogo1{
-    position: absolute;
-    top: 32px;
-    left: 20px;
-}
-#settimelogo2{
-    position: absolute;
-    top: 115px;
-    left: 20px;
-}
-#settimelogo3{
-    position: absolute;
-    top: 202px;
-    left: 20px;
-}
-#settimelogo4{
-    position: absolute;
-    top: 296px;
-    left: 20px;
-}
+
 .instr{
     color: #3D087B;
     font-size: 18px;
 }
-.instr1{
-    position: absolute;
-    top: 38px;
-    left: 157px;
 
-}
-.instr2{
-    position: absolute;
-    top: 116px;
-    left: 157px;
-}
-.instr3{
-    position: absolute;
-    top: 201px;
-    left: 157px;
-}
-.instr4{
-    position: absolute;
-    top: 296px;
-    left: 157px;
-}
-.timeselect1{
-    position: absolute;
-    top: 34px;
-    left: 334px;
-    padding: 7px;
-    width: 181px;
-}
-.timeselect2{
-    position: absolute;
-    top: 110px;
-    left: 334px;
-    padding: 7px;
-    width: 181px;
-}
-.timeselect3{
-    position: absolute;
-    top: 194px;
-    left: 334px;
-    padding: 7px;
-    width: 181px;
-}
-.timeselect4{
-    position: absolute;
-    top: 289px;
-    left: 334px;
-    padding: 7px;
-    width: 181px;
-}
 .time{
     display: flex;
     flex-wrap:wrap ;
@@ -139,6 +95,10 @@ body{
     align-self: center;
     text-align: center;
     color: #8A11BF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 .mins{
     background-image: url(./media/timeline.jpg);
@@ -148,6 +108,10 @@ body{
     align-self: center;
     text-align: center;
     color: #8A11BF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 .secs{
     background-image: url(./media/timeline.jpg);
@@ -157,6 +121,10 @@ body{
     align-self: center;
     text-align: center;
     color: #8A11BF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 .M{
     background-image: url(./media/AM_svg.jpg);
@@ -166,11 +134,15 @@ body{
     align-self: center;
     text-align: center;
     color: #8A11BF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 .wishes{
     background-color: #8A11BF;
     color: #FFFFFF;
-    width: 566px;
+    width: 37%;
     height: 77px;
     display: flex;
     justify-content: center;
@@ -179,9 +151,9 @@ body{
     font-size: 27px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    position: absolute;
-    top: 527px;
-    left: 124px;
+    position: relative;
+    top: 18.8em;
+    left: 4.9em;
     font-weight: bolder;
     
 }
@@ -214,45 +186,44 @@ body{
 }
 
 .timings{
-    background-color: #8A11BF ;
+    background-color: #8A11BF;
     color: #F25CFE;
-    width: 253px;;
+    width: 17%;
     height: 117px;
     text-align: left;
     padding: 5px;
     border-radius: 10px;
-    position: absolute;
-    top: 615px;
-    left: 437px;
+    position: relative;
+    top:  29em;
+    left:28.5%;
 
 }
 .btn{
-    width: 299px;
+    width: 20%;
     height: 50px;
     border-radius: 4px;
     background-image: linear-gradient(113deg,#6E54EC,#CB52F8, #FC5EFF, #F1A7C5);
     color: #FFFFFF;
     font-size: 24px;
-    position: absolute;
-    top: 624px;
-    left: 124px;
+    position: relative;
+    top: 21.4em;
+    left: 8%;
 }
 .btn:hover{
     background-image: linear-gradient(#F1A7C5,#FC5EFF,#CB52F8,#6E54EC);
     box-shadow: 0px 0px 5px lightgray;
 }
 .image{
-    
     position: absolute;
     top: 345px;
     left: 707px;
     width: 36.5%;
-    height: 100%;
+    height: 46%;
     border-radius: 10px;
     background-image: url(./media/Component\ 30\ –\ 1.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-
+    object-fit: contain;
 }
 
 .icons-container{
@@ -270,206 +241,177 @@ body{
 
 
 @media only screen and (min-width:250px) and (max-width:750px){
-    
+    body{
+        min-height: 160vh;
+    }
     .clockimg{
         position: relative;
         top:20px;
         left: 2%;
-        
+        margin-left: 5%;
     }
     .clock_logo{
-        width: 30%;
-    }
-
-    .image{
-        position: absolute;
-        top: 5%;
-        left: 55%;
-        width: 40%;
-        height: 15%;
-        background-size: 100%;
-
-    }
-    .mobile-img2{
-        position: absolute;
-        top: 20%;
-        display: block;
-        width: 40%;
-        height: 6em;
-        background-image: url('./media/Group1.jpg');
-    }
-
-    .mobile-img3{
-        position: absolute;
-        top:35%;
-        display: block;
-        width: 40%;
-        height: 56em;
-        background-image: url('./media/lunch_image.jpg');
-    }
-
-    .mobile-img4{
-        position: absolute;
-        top:50%;
-        display: block;
-        width: 40%;
-        height: 56em;
-        background-image: url('./media/goodnight_image.jpg');
-    }
-
-
-    .icons-container{
-        position: relative;
-        top: 2em;
-        left: 2%;
-        display: flex;
-        flex-direction: row;
-        background-color: #FFFFFF;
-        width: 40%;
-        height: 60px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        justify-content: space-evenly;
+        width: 60%;
     }
 
     .time{
-        width: 48%;
-        position: relative;
-        top: 7em;
-        left: 2%;
-        height: 3em;
-    }
-
-    .clock-logo{
-        width: 30%;
-    }
-   
-    .hrs{
         display: flex;
-        align-items: center;
-        width: 15%;
-        font-size: 1.5em;
-        
-        height: 60%;
-    }
-    .dot{
-    display: none;
-    }
-    .mins{
-        display: flex;
-        align-items: center;
-        width: 15%;
-        height: 60%;
-        font-size: 1.5em;
-    }
-    .secs{
-        display: flex;
-        align-items: center;
-        width: 15%;
-        font-size: 1.5em;
-        height: 60%;
-    }
-    .M{
-        height: 60%;
-        display: flex;
-        align-items: center;
-        width: 10%;
-        
-        font-size: 0.6em;
-    }
-  
-    .texttime{
-        position: relative;
-        top: 15%;
-
-    }
-    .settime{
-        width: 0px;
-        position: relative;
-       top: 1%;
-       left: 1%;
-    }
-    .settimelogo{
-        display: block;
-    }
-    
-    #settimelogo1{
-        background-color: wheat;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #FFFFFF;
+        border: 1px solid #EDEDED;
+        border-radius: 5px;
+        width: 90%;
+        height: 130px;
         position: relative;
         top: 1%;
+        left: 1%;
+        margin-top: 9%;
+        margin-left: 5%;
     }
-    #settimelogo2{
-        position: relative;
-        top: -17%;
-        left: 5.5em;
-    }
-    #settimelogo3{
-        position: relative;
-        top: -34%;
-        left: 9.5em;
-    }
-    #settimelogo4{
-        display: none;
-    }
+
    
-    .timeselect1{
-        position: relative;
-        top: 35%;
-        left: 2.5%;
-        border: none;
+    .hrs{
+        background-image: url(./media/timeline.jpg);
+        width: 13%;
+        height: 35%;
+        font-size: 36px;
+        align-self: center;
+        text-align: center;
+        color: #8A11BF;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .timeselect2{
-        position: relative;
-        top: 25%;
-        left: 2.5%;
-        border: none;
-    }
-    .timeselect3{
-        position: relative;
-        top: 15%;
-        left: 2.5%;
-        border: none;
-    }
-    .timeselect4{
-        position: relative;
-        top: 15%;
-        left: 2.5%;
-        border: none;
-    }
-    .instr{
-        display: none;
-    }
-    .wishes{
-        display: none;
+
+    .mins{
+        background-image: url(./media/timeline.jpg);
+        width: 13%;
+        height: 35%;
+        font-size: 36px;
+        align-self: center;
+        text-align: center;
+        color: #8A11BF;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
-    .advice{
+
+    .secs{
+        background-image: url(./media/timeline.jpg);
+        width: 13%;
+        height: 35%;
+        font-size: 36px;
+        align-self: center;
+        text-align: center;
+        color: #8A11BF;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .M{
+        background-image: url(./media/timeline.jpg);
+        width: 13%;
+        height: 35%;
+        font-size: 36px;
+        align-self: center;
+        text-align: center;
+        color: #8A11BF;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dot{
         display: none;
+    }
+
+    .settime{
+        background-color: #FFFFFF;
+        display: flex;
+        border-radius: 10px;
+        width: 90%;
+        height: 30vh;
+        position: relative;
+        top: 1%;
+        left: 1%;
+        margin-left: 5%;
+        margin-top: 6%;
+    }
+
+    .fistdropdown{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
+.timeselect1{
+    position: relative;
+
+}
+.instr{
+    position: relative;
+}
+
+.advice{
+    width: 90%;
+    position: relative;
+    top: 2em;
+    left: 5%;
+    height: 3em;
+
+}
+
+.image{
+    width: 90%;
+    position: relative;
+    top: 5%;
+    top: 3em;
+    left: 5%;
+    visibility: visible;
+    height: 12em;
     }
     .timings{
         position: relative;
-        top: 200px;
-        left: 68px;
+        top: 2em;
+        width: 90%;
+        left: 5%;
     }
+
     .btn{
         position: relative;
-        top: 173px;
-        left: 66px;
-    }
-    .icons{
-        display: block;
+        top: 1em;
+        width: 90%;
+        left: 5%;
     }
 
-    
-
-
-.btn{
-    display: none;
-
+    .wishes{
+        position: relative;
+        width: 90%;
+        top: 0.5em;
+        left: 5%;
+    }
 }
 
-.timings{
-    display: none;
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
