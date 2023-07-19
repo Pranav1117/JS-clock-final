@@ -362,27 +362,29 @@ body{
 }
 
 .advice{
-    width: 90%;
+    width: 88%;
     position: relative;
     top: 2em;
-    left: 5%;
+    left: 3%;
     height: 3em;
 
 }
-
+#image{
+    object-fit: contain;
+}
 .image{
-    width: 90%;
+    width: 88%;
     position: relative;
     top: 5%;
     top: 3em;
-    left: 5%;
+    left: 3%;
     visibility: visible;
     height: 12em;
     }
     .timings{
         position: relative;
         top: 2em;
-        width: 90%;
+        width: 87%;
         left: 5%;
     }
 

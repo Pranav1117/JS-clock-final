@@ -137,7 +137,7 @@ function execute() {
         if (value4 === hours) {
           advice.innerText = "CLOSE YOUR EYES AND GO TO SLEEP";
           let img = document.getElementById("image");
-          img.style.backgroundImage = "url('./media/goodnight_image.jpg')";
+          img.style.backgroundImage = "url('./media/night_image.jpg')";
         }
       }
     }
