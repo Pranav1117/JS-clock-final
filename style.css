@@ -14,7 +14,7 @@ body{
     justify-content: space-evenly;
     border-radius: 10px;
     width: 38%;
-    height: 50%;
+    height: 23rem;
     position: absolute;
     top: 149px;
     left: 124px;
@@ -48,6 +48,7 @@ body{
 .instr{
     color: #3D087B;
     font-size: 18px;
+    width: 8rem;
 }
 
 .time{
@@ -60,9 +61,49 @@ body{
     width: 536px;
     height: 130px;
     position: absolute;
-    top: 65px;
+    top: 45px;
     left: 706px;
     margin-left: 3%;
+    z-index: 3;
+}
+.div1{
+    border: 1px solid black;
+    width: 30%;
+    background-color: white;
+    height: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    width: 500px;
+    height: 130px;
+    position: absolute;
+    top: 58px;
+    left: 706px;
+    margin-left: 4.3%;
+    opacity: 60%;
+}
+.div2{
+    border: 1px solid black;
+    width: 30%;
+    background-color: white;
+    height: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    width: 420px;
+    height: 130px;
+    position: absolute;
+    top: 70px;
+    left: 420px;
+    opacity: 30%;
+    margin-left: 26%;
+
 }
 .texttime{
     font: normal normal 600 20px/32px Manrope;
@@ -140,7 +181,9 @@ body{
     align-content: center;
     flex-wrap: wrap;
 }
+
 .wishes{
+    margin-top: 1rem;
     background-color: #8A11BF;
     color: #FFFFFF;
     width: 38%;
@@ -191,14 +234,26 @@ body{
     background-color: #8A11BF;
     color: #F25CFE;
     width: 17%;
-    height: 117px;
+    height: 80px;
     text-align: left;
     padding: 5px;
     border-radius: 10px;
     position: relative;
-    top:  29em;
-    left:28.5%;
+    top: 29em;
+    left: 28.5%;
 
+}
+.timeselect1{
+    width: 12rem;
+}
+.timeselect2{
+    width: 12rem;
+}
+.timeselect3{
+    width: 12rem;
+}
+.timeselect4{
+    width: 12rem;
 }
 .btn{
     width: 20%;
@@ -220,7 +275,7 @@ body{
     top: 345px;
     left: 707px;
     width: 36.5%;
-    height: 46%;
+    height: 23rem;
     border-radius: 10px;
     background-image: url(./media/Component\ 30\ –\ 1.jpg);
     background-repeat: no-repeat;
@@ -243,15 +298,19 @@ body{
 }
 
 
-@media only screen and (min-width:250px) and (max-width:750px){
+@media only screen and (min-width:250px) and (max-width:1024px){
+    .div1 ,.div2{
+        display: none;
+    }
     body{
         min-height: 160vh;
     }
     .clockimg{
         position: relative;
-        top:20px;
+        top: 20px;
         left: 2%;
         margin-left: 5%;
+        width: 90%;
     }
     .clock_logo{
         width: 60%;
@@ -338,7 +397,7 @@ body{
         display: flex;
         border-radius: 10px;
         width: 90%;
-        height: 30vh;
+        height: 12rem;
         position: relative;
         top: 1%;
         left: 1%;
@@ -355,6 +414,18 @@ body{
 
 .timeselect1{
     position: relative;
+    width: 50%;
+}
+.timeselect2{
+    width: 50%;
+
+}
+.timeselect3{
+    width: 50%;
+
+}
+.timeselect4{
+    width: 50%;
 
 }
 .instr{
@@ -362,10 +433,10 @@ body{
 }
 
 .advice{
-    width: 88%;
+    width: 89%;
     position: relative;
     top: 2em;
-    left: 3%;
+    left: 3.5%;
     height: 3em;
 
 }
@@ -373,35 +444,50 @@ body{
     object-fit: contain;
 }
 .image{
-    width: 88%;
+    width: 90%;
     position: relative;
     top: 5%;
     top: 3em;
-    left: 3%;
+    left: 3.5%;
     visibility: visible;
-    height: 12em;
+    /* height: 12em; */
     }
     .timings{
         position: relative;
         top: 2em;
         width: 87%;
-        left: 5%;
+        left: 6.5%;
     }
 
     .btn{
         position: relative;
         top: 1em;
         width: 90%;
-        left: 5%;
+        left: 6.5%;
     }
 
     .wishes{
         position: relative;
         width: 90%;
         top: 0.5em;
-        left: 5%;
+        left: 6%;
     }
 }
+
+/* @media only screen and (min-width:768px) and (max-width:1024px){
+    .clock_logo{
+        position: relative;
+        right: 5rem;
+        width: 70%;
+
+
+    }
+    .settime{
+        position: relative;
+        left: 2rem;
+        width: 40%;
+    }
+} */
 
 
 
