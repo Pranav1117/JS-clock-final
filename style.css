@@ -450,7 +450,7 @@ body{
     top: 3em;
     left: 3.5%;
     visibility: visible;
-    /* height: 12em; */
+    min-height: 35rem;
     }
     .timings{
         position: relative;
